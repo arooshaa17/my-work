@@ -5,6 +5,7 @@ from pages.base_page import BasePage
 class SearchPage(BasePage):
 
     def search_by_value(self, search_text):
+        self.wait_for_element(SEARCH_BOX)
         search_box = self.driver.find_element_by_css_selector(SEARCH_BOX)
         search_box.click()
         search_box.send_keys(search_text)

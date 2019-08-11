@@ -27,5 +27,3 @@ class SearchResultPage(BasePage):
         Input sent text to sent field
         """
         self.driver.find_element_by_css_selector(BUY_NOW).click()
-
-
